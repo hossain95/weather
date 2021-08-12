@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container  d-flex justify-content-center" style="margin-top: 40px;">
+        <div class="Weather card col-sm-12 col-md-6 col-lg-5 text-center" style="padding:20px;">
+            <div>
+                <h4>Weather Forecast</h4>
+            </div>
+            <div>
+                <form id="form">
+                    <input type="text" class="form-control text-center" placeholder="Enter City" style="font-size: 20px; font-weight: bold; border-radius: 20px;" id="city">
+                </form>
+                <table class="table" id="table" style="display: none;">
+                    <tbody>
+                        <tr>
+                            <td> <code id="img" style="font-size: 40px; font-weight: bolder;"></code><span style="font-size: 40px; font-weight: bolder;">Today</span> <br> <code id="date" style="color: white;"></code></td>
+                        </tr>
+
+                        <tr>
+                            <td> <code id="tem" style="font-size: 45px; font-weight: bolder;"></code> <br> <code id="cloud" style="color: white;"></code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td id="location" style="font-size: 20px; font-weight: bold;"></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px; font-weight: bold;">Feels: <code id="feels"></code></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 20px; font-weight: bold;">Max: <code id="max"></code></span><span style="font-size: 20px; font-weight: bold;">Min: <code id="min"></code></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <h4 id="error"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="program/main.js"></script>
+</body>
+</html>
